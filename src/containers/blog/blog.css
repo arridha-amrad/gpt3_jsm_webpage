@@ -1,0 +1,133 @@
+.blog__area {
+  margin: 8rem 0;
+}
+
+.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+
+.blog__top h1 {
+  line-height: 1.2;
+  font-weight: 800;
+  font-size: 62px;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blog__bottom {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+      grid-template-areas: "box1 box2 box3" "box1 box4 box5";
+  gap: 2rem 3rem;
+}
+
+.box1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: box1;
+  display: -ms-grid;
+  display: grid;
+}
+
+.box2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: box2;
+}
+
+.box3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: box3;
+}
+
+.box4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: box4;
+}
+
+.box5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: box5;
+}
+
+.img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.img-container img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.box__content__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  background-color: #042c54;
+  padding: 2rem 1rem 2rem 2rem;
+}
+
+.box__content__container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.box__content__container .content .date {
+  display: block;
+  color: #fff;
+  font-size: 11.65px;
+}
+
+.box__content__container .content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.box__content__container a {
+  display: block;
+  color: #fff;
+  font-size: 11.65px;
+}
+/*# sourceMappingURL=blog.css.map */

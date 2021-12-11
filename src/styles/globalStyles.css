@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Manrope", sans-serif !important;
+  background-color: #040c18;
+}
+
+::-webkit-scrollbar {
+  width: 10px !important;
+  background: #333 !important;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button :focus {
+  outline: none;
+}
+
+input {
+  outline: none;
+  border: none;
+  padding: 0 1rem;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+}
+
+.gradient_bg {
+  /* ff 3.6+ */
+  /* safari 5.1+,chrome 10+ */
+  /* opera 11.10+ */
+  /* ie 10+ */
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 3% 25%, #002853 0%, #040c18 100%);
+}
+/*# sourceMappingURL=globalStyles.css.map */

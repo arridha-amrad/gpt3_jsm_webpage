@@ -1,0 +1,122 @@
+@import "../../styles/variable.scss";
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  padding-top: 0;
+
+  @media (min-width: 1000px) {
+    padding-top: 1rem;
+  }
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex: 2;
+
+  img {
+    margin-right: 1rem;
+  }
+
+  a {
+    display: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.125rem;
+
+    @media (min-width: 992px) {
+      display: block;
+    }
+  }
+}
+.navbar-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+
+  .collapsed-menu {
+    position: relative;
+    display: flex;
+    @media (min-width: 992px) {
+      display: none;
+    }
+
+    .shadow {
+      box-shadow: 0 4px 8px 0 rgba(218, 215, 215, 0.2),
+        0 6px 20px 0 rgba(216, 212, 212, 0.19);
+    }
+
+    .menu {
+      width: 250px;
+      position: absolute;
+      top: 2rem;
+      right: 0;
+      border-radius: 5px;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      a {
+        display: block;
+        color: #fff;
+      }
+
+      .btn {
+        color: $colorPrimaryButtonColor;
+      }
+    }
+
+    img {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+
+  button {
+    height: 3.625rem;
+    width: 9.5rem;
+    font-size: 1.125rem;
+    display: none;
+    @media (min-width: 992px) {
+      display: block;
+    }
+  }
+
+  .secondary {
+    background-color: transparent;
+    color: #fff;
+  }
+  .primary {
+    background-color: $colorPrimaryButtonColor;
+    color: #fff;
+    border-radius: 5px;
+  }
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
